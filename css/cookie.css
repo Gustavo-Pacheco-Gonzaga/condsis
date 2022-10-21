@@ -1,0 +1,49 @@
+#consent-popup {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 6rem;
+    background-color: #00aefa;
+    transition: opacity 1s ease;
+    z-index: 10;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#consent-popup p {
+    margin-left: 20px;
+}
+
+#consent-popup .button-border-white:hover {
+    background: white;
+    color: #00aefa;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    #consent-popup {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #consent-popup p {
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #consent-popup {
+        padding: 2rem 2rem;
+        max-width: 600px;
+    }
+    #consent-popup p {
+        text-align: center;
+    }
+}

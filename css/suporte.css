@@ -1,0 +1,252 @@
+/* Suporte */
+#suporte-secao2 {
+    background: #f2f2f2;
+    padding: 6vh 24vw 2vh 24vw;
+    align-items: center;
+}
+
+.suporte-secao2-div {
+    align-items: top;
+}
+
+#suporte-secao2 svg {
+    width: 23px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+#suporte-secao2 a {
+    margin-left: 10px;
+}
+
+#suporte-secao2 img {
+    position: absolute;
+    width: 220px;
+    right: 24vw;
+    top: 130px;
+}
+
+/* Secao8 */
+
+#secao8 {
+    position: relative;
+}
+
+#secao8-background div {
+    background-image: url('../Midias/suporte-image.png');
+    height: 200px;
+    position: relative;
+    background-size: 120%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#secao8-background div::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #061c24cc;
+}
+
+#secao8-div-apresentacao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24vw;
+}
+
+/* Secao8 */
+
+/* Secao14 */
+#secao14 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8vh 24vw;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+    align-items: flex-start;
+}
+
+#secao14-form-div {
+    justify-content: space-between;
+}
+
+#secao14 h2 {
+    margin-bottom: 40px;
+}
+
+#secao14-formulario {
+    width: 100%;
+    align-items: center;
+}
+
+#secao14-formulario-div {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#secao14 input {
+    padding: 10px;
+    width: calc(48.8vw - 24vw);
+    margin-bottom: 20px;
+}
+
+#secao14 select {
+    padding: 10px;
+    width: calc(48.8vw - 24vw);
+    margin-bottom: 20px;
+}
+
+#secao14 textarea {
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 50px;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+#secao14 textarea,
+#secao14 input {
+    border: 1px solid lightgray;
+}
+
+#secao14 textarea:hover,
+#secao14 input:hover {
+    border: 1px solid gray;
+}
+
+#secao14 button {
+    width: 210px;
+}
+
+/* Fim Secao14 */
+
+/* Resize Geral*/
+@media screen and (max-width: 1710px) {
+    #suporte-secao2 {
+        padding: 6vh 18vw 2vh 18vw;
+    }
+
+    #suporte-secao2 img {
+        right: 18vw;
+    }
+
+    #secao14 {
+        padding: 8vh 18vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 18vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 18vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 18vw;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    #suporte-secao2 {
+        padding: 6vh 14vw 2vh 14vw;
+    }
+
+    #suporte-secao2 img {
+        right: 14vw;
+    }
+
+    #secao14 {
+        padding: 8vh 14vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 14vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 14vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 14vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #suporte-secao2 {
+        padding: 6vh 8vw 2vh 8vw;
+    }
+
+    #suporte-secao2 img {
+        display: none;
+    }
+
+    #secao14 {
+        padding: 7vh 8vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 8vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 8vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 8vw;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #suporte-secao2 {
+        padding: 6vh 7vw 2vh 7vw;
+    }
+
+    #suporte-secao2 img {
+        right: 7vw;
+    }
+
+    #secao14 {
+        padding: 6vh 7vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 7vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 7vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 7vw;
+    }
+}
+
+/* Fim Resize Geral */
+
+@media screen and (max-width: 580px) {
+    #secao14-formulario-div {
+        flex-direction: column;
+    }
+
+    #secao14 input {
+        width: 100%;
+    }
+
+    #secao14 select {
+        width: 100%;
+    }
+}

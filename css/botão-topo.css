@@ -1,0 +1,50 @@
+@media screen and (max-width: 1024px) {
+    #button-top {
+        border: 3px solid white;
+        border-radius: 1px;
+        background: #0d1b2149;
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+        padding: 10px 20px;
+        bottom: 80px;
+        right: 20px;
+        z-index: 5;
+        color: white;
+        box-shadow: 0 1px 7px -4px black;
+        transition: all .3s;
+        cursor: pointer;
+    }
+
+    #button-top {
+
+        background: #0d1b2163;
+    }
+
+    #button-top::after {
+        position: absolute;
+        border-radius: 1px;
+        content: "";
+        background: white;
+        top: 50%;
+        left: 39%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 5px;
+        height: 25px;
+    }
+
+    #button-top::before {
+        position: absolute;
+        border-radius: 1px;
+        content: "";
+        background: white;
+        top: 50%;
+        left: 61%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 5px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,233 @@
+/* Secao8 */
+
+#secao8 {
+    position: relative;
+}
+
+#secao8-background div {
+    background-image: url('../Midias/aerial-architecture-black-and-white-700974_copiar_cópia.jpg');
+    height: 200px;
+    position: relative;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#secao8-background div::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #061c24cc;
+}
+
+#secao8-div-apresentacao {
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    transform: translateY(-50%);
+    left: 24vw;
+}
+
+#secao14 .full-input {
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 50px;
+}
+
+#demonstracao-img {
+    position: absolute;
+    width: 450px;
+    right: 24vw;
+    top: 100px;
+}
+
+/* Secao8 */
+
+/* Secao14 */
+#secao14 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8vh 24vw;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+    align-items: flex-start;
+}
+
+#secao14-form-div {
+    justify-content: space-between;
+}
+
+#secao14 h2 {
+    margin-bottom: 40px;
+}
+
+#secao14-formulario {
+    width: 100%;
+    align-items: center;
+}
+
+#secao14-formulario-div {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#secao14 input {
+    padding: 10px;
+    width: calc(48.8vw - 24vw);
+    margin-bottom: 20px;
+}
+
+#secao14 select {
+    padding: 10px;
+    width: calc(48.8vw - 24vw);
+    margin-bottom: 20px;
+}
+
+#secao14 #demonstracao-papel {
+    width: 100%;
+}
+
+#secao14 .full-input {
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 50px;
+}
+
+::placeholder {
+    color: #7f7f7f;
+}
+
+select {
+    color: #7f7f7f;
+}
+
+option:hover {
+    background-color: #00aefa;;
+}
+
+#secao14 .full-input,
+#secao14 input {
+    border: 1px solid lightgray;
+}
+
+#secao14 .full-input:hover,
+#secao14 input:hover {
+    border: 1px solid gray;
+}
+
+#secao14 button {
+    width: 210px;
+}
+
+/* Fim Secao14 */
+
+/* Resize Geral*/
+@media screen and (max-width: 1710px) {
+
+    #demonstracao-img {
+        right: 18vw;
+    }
+
+    #secao14 {
+        padding: 8vh 18vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 18vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 18vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 18vw;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    #demonstracao-img {
+        right: 14vw;
+    }
+
+    #secao14 {
+        padding: 8vh 14vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 14vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 14vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 14vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #demonstracao-img {
+        display: none;
+    }
+
+    #secao14 {
+        padding: 7vh 8vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 8vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 8vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 8vw;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    #secao14 {
+        padding: 6vh 7vw;
+    }
+
+    #secao14 input {
+        width: calc(48.8vw - 7vw);
+    }
+
+    #secao14 select {
+        width: calc(48.8vw - 7vw);
+    }
+
+    #secao8-div-apresentacao {
+        left: 7vw;
+    }
+}
+
+/* Fim Resize Geral */
+
+@media screen and (max-width: 580px) {
+    #secao14-formulario-div {
+        flex-direction: column;
+    }
+
+    #secao14 input {
+        width: 100%;
+    }
+
+    #secao14 select {
+        width: 100%;
+    }
+}
